@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Noah’s Heart</title>
+	<meta name="description" content="อย่าลืมขอจากคนรีเควส">
+	<meta name="keywords" content="">
+	<meta name="author" content="Playpark Co.,Ltd Thailand">
+	<meta name="copyright" content="Playpark Co.,Ltd Thailand">
+	<!-- START: Facebook Meta -->
+	<meta property="og:title" content="อย่าลืมขอจากคนรีเควส">
+	<meta property="og:type" content="game">
+	<meta property="og:url" content="">
+	<meta property="og:image" content="images/fb-share.jpg">
+	<meta property="og:site_name" content="">
+	<meta property="og:description" content="อย่าลืมขอจากคนรีเควส">
+	<!-- END: Facebook Meta -->
+	<link rel="icon" type="image/png" href="images/favicon.png">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="css/style.custom.css">
+	<link rel="stylesheet" href="css/head-website.css">
+	<link rel="stylesheet" href="css/planet.css">
+	<link rel="stylesheet" href="css/milestone.css">
+	<link rel="stylesheet" href="css/invite-friend.css">
+	<link rel="stylesheet" href="css/game-character.css">
+	<link rel="stylesheet" href="css/game-feature.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<!--Fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+Thai:wght@100;200;300;400;500;600;700;800;900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+	<!--Angularjs-->
+	<script src="https://code.angularjs.org/1.4.8/angular.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-sanitize.js"></script>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="js/app.js"></script>
+</head>
+
+<body ng-app="myApp2" ng-controller="SuperCtrl5" id="page-top" data-bs-spy="scroll" data-bs-target=".list-menu" data-bs-offset="50">
+	<div id="unsupported-browser-bar"></div>
+	<div class="progress-wrap d-none d-md-block active-progress">
+		<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+			<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 0;"></path>
+		</svg>
+	</div>
+
+	<!-------------------->
+	<!-- Navigation Menu-->
+	<!-------------------->
+	<nav class="navbar navbar-expand-xxl navbar-black fixed-top bg-navbar" id="mainNav">
+		<div class="container"> <a class="navbar-brand" href="#page-top"> <img src="images/logo-noah-nav.png" alt="Logo Noah's Heart"> </a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item"> <a class="nav-link" href="#pre-register"> Pre-register </a> </li>
+					<li class="nav-item"> <a class="nav-link" href="#planet"> Explore Noah’s Planet </a> </li>
+					<li class="nav-item"> <a class="nav-link" href="#milestone"> Milestone </a> </li>
+					<li class="nav-item"> <a class="nav-link" href="#invite-friend"> Invite Friend </a> </li>
+					<li class="nav-item"> <a class="nav-link" href="#game-characters"> Game Characters </a> </li>
+					<li class="nav-item"> <a class="nav-link" href="#game-feature"> Game Features </a> </li>
+					<li class="nav-item">
+						<div class="dropdown mt-left">
+							<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false"><img src="images/flag/thai.png">&nbsp;&nbsp;ภาษาไทย </button>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+								<li>
+									<button class="dropdown-item" type="button"><img src="images/flag/china.png">&nbsp;&nbsp;China</button>
+								</li>
+								<li>
+									<button class="dropdown-item" type="button"><img src="images/flag/eng.png">&nbsp;&nbsp;English</button>
+								</li>
+								<li>
+									<button class="dropdown-item" type="button"><img src="images/flag/bahasa.png">&nbsp;&nbsp;Bahasa</button>
+								</li>
+								<li class="mb-2">
+									<button class="dropdown-item" type="button"><img src="images/flag/vietnam.png">&nbsp;&nbsp;Việt Nam</button>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!---------------->
+	<!--Pre-Register-->
+	<!---------------->
+	<div class="pre-register" id="pre-register">
+		<div class="col-12">
+			<h2 class="visually-hidden">Noah's Heart Pre-Register</h2>
+			<p class="visually-hidden">Noah's Heart เปิดให้ลงทะเบียนล่วงหน้าแล้ววันนี้ ลุ้นรับของรางวัลมากมาย</p>
+		</div>
+		<div class="block-header-noah">
+			<div class="h-100 w-100 position-absolute overlay-noah"></div>
+			<div class="position-absolute h-100 w-100">
+				<div id="video-placeholder" class="bg-youtube-noah d-none d-md-block"></div>
+				<video autoplay muted loop id="myVideo" class="bg-youtube-noah d-none d-md-block">
+					<source src="images/noah.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div class="header-noah">
+				<div class="container-lg mt-content-pre">
+					<div class="row d-flex align-items-center justify-content-center">
+						<div class="col-12 d-block d-xl-none"> <a data-fancybox href="https://www.youtube.com/watch?v=c-YHzUzze04"> <img src="images/video-btn-noah.png" alt="Video noah" class="img-fluid btn-zoom-inout"> </a> </div>
+						<div class="col">
+							<h2 class="text-title-count">จำนวนยอดลงทะเบียน</h2>
+							<h1 class="text-count" ng-bind-html="tools2.MileStone | number"> </h1>
+						</div>
+						<div class="col-12 mb-2"> <img src="images/th/pre-register/pre-register-noah.png" class="img-fluid d-none d-md-block mx-auto" alt="ลงทะเบียนวันนี้เพื่อรับของรางวัลเเละสิทธิพิเศษมากมาย Noah's Heart"> <img src="images/th/pre-register/pre-register-sm-noah.png" class="img-fluid d-block d-md-none mx-auto mb-3" alt="ลงทะเบียนวันนี้เพื่อรับของรางวัลเเละสิทธิพิเศษมากมาย Noah's Heart"> </div>
+						<div class="col-12 col-md-10 col-lg-8 col-xl-7">
+							<form class="row">
+								<div class="col-md-6 text-start">
+									<div class="mb-3">
+										<label for="phone" class="form-label"> เบอร์โทร * </label>
+										<input type="text" class="form-control FreeText2 " id="phone" name="FreeText2" placeholder="" value="">
+										<div class="invalid-feedback"> Error Massage ... </div>
+									</div>
+								</div>
+								<div class="col-md-6 text-start">
+									<div class="mb-3">
+										<label for="maaaaaa" class="form-label"> อีเมล * </label>
+										<input type="text" class="form-control FreeText1 " id="maaaaaa" name="FreeText1" placeholder="" value="">
+										<div class="invalid-feedback"> Error Massage ... </div>
+									</div>
+								</div>
+								<div class="col-12 text-start text-condition">
+									<div class="row ">
+										<div class="col-12">
+											<div class="form-check">
+												<input class="form-check-input FreeText3 " name="FreeText3" type="checkbox" value="ยอมรับ" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+												<label class="form-check-label" for="invalidCheck3"> <a href="#"> ยอมรับข้อตกลงในการใช้งาน </a> </label>
+												<div class="invalid-feedback"> Error Massage ... </div>
+											</div>
+										</div>
+									</div>
+									<div class="row ">
+										<div class="col-12">
+											<div class="form-check">
+												<input class="form-check-input FreeText4 " name="FreeText4" type="checkbox" value="ยอมรับ" id="invalidCheck4" aria-describedby="invalidCheck4Feedback" required>
+												<label class="form-check-label" for="invalidCheck4"> <a href="#"> ยอมรับข้อตกลงในการใช้งาน </a> </label>
+												<div class="invalid-feedback"> Error Massage ... </div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-11 col-sm-4 col-md-6 col-lg-6 col-xl-6 mt-4 mx-auto px-0">
+									<button type="submit" class=" submit" style=" padding: 0;margin: 0;border: 0; background-color: #ffffff00;"> <img src="images/th/pre-register/btn-submit-noah.png" alt="ยืนยันการลงทะเบียน" class="img-fluid hvr-shrink"> </button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!------------------------->
+	<!--Explore Noah’s Planet-->
+	<!------------------------->
+	<div class="planet" id="planet">
+		<!------>
+		<!--PC-->
+		<!------>
+		<div class="container-pc  d-none d-lg-block">
+			<div class="d-inline-block position-relative text-center"> <img src="images/th/planet/name-planet-01.png" class="planet-position-main planet-position-1" alt="TASAM BAISIN"> <img src="images/th/planet/name-planet-02.png" class="planet-position-main planet-position-2" alt="OLMEC RAINFOREST"> <img src="images/th/planet/name-planet-03.png" class="planet-position-main planet-position-3" alt="CANAAN MOUNTAIN"> <img src="images/th/planet/name-planet-04.png" class="planet-position-main planet-position-4" alt="LAPHOMLE ICEFIELD"> <img src="images/th/planet/name-planet-05.png" class="planet-position-main planet-position-5" alt="AL FRIEZA DESERT"> <a href="#0" class="planet-select-main1" data-planet-hover="planet-position-1"> </a> <a href="#0" class="planet-select-main2" data-planet-hover="planet-position-2"> </a> <a href="#0" class="planet-select-main3" data-planet-hover="planet-position-3"> </a> <a href="#0" class="planet-select-main4" data-planet-hover="planet-position-4"> </a> <a href="#0" class="planet-select-main5" data-planet-hover="planet-position-5"> </a> <img src="images/th/planet/planet-space.png" class="img-fluid" alt="Planet Space"> </div>
+		</div>
+		<!---------->
+		<!--Mobile-->
+		<!---------->
+		<div class="container-pc d-block d-lg-none">
+			<div class="d-inline-block position-relative text-center">
+				<img src="images/th/planet/name-planet-mb-01.png" class="planet-position-main planet-position-1" alt="TASAM BAISIN">
+				<img src="images/th/planet/name-planet-mb-02.png" class="planet-position-main planet-position-2" alt="OLMEC RAINFOREST">
+				<img src="images/th/planet/name-planet-mb-03.png" class="planet-position-main planet-position-3" alt="CANAAN MOUNTAIN">
+				<img src="images/th/planet/name-planet-mb-04.png" class="planet-position-main planet-position-4" alt="LAPHOMLE ICEFIELD">
+				<img src="images/th/planet/name-planet-mb-05.png" class="planet-position-main planet-position-5" alt="AL FRIEZA DESERT">
+				<a href="#0" class="planet-select-main1" data-planet-hover="planet-position-1"> </a>
+				<a href="#0" class="planet-select-main2" data-planet-hover="planet-position-2"> </a>
+				<a href="#0" class="planet-select-main3" data-planet-hover="planet-position-3"> </a>
+				<a href="#0" class="planet-select-main4" data-planet-hover="planet-position-4"> </a>
+				<a href="#0" class="planet-select-main5" data-planet-hover="planet-position-5"> </a>
+				<img src="images/th/planet/planet-space-mb.png" class="img-fluid" alt="Planet Space">
+			</div>
+		</div>
+	</div>
+
+	<!----------------------------------->
+	<!--Pre-Register Reward & milestone-->
+	<!----------------------------------->
+	<div class="milestone" id="milestone">
+		<div class="container-xl position-relative" style="z-index:2">
+			<div class="row">
+				<div class="col-12"><img src="images/th/milestone/title-milestone-noah.png" alt="Pre-Register Reward & milestone" class="img-fluid d-none d-md-block mx-auto">
+					<img src="images/th/milestone/title-milestone-sm-noah.png" alt="Pre-Register Reward & milestone" class="img-fluid d-block d-md-none mx-auto">
+				</div>
+
+				<div class="col-12 d-inline-block position-relative">
+					<div class="row">
+						<div class="col-12"><img src="images/th/milestone/milestone-space.png" class="img-fluid invisible d-none d-lg-block" alt="Background Space"></div>
+					</div>
+
+					<div class="row justify-content-center text-center">
+						<div class="col-12 hexagon-gift mx-auto d-none d-lg-block">
+							<div class="rotate-obj obj">
+								<div>
+									<div></div>
+									<i></i>
+									<i></i>
+									<i></i>
+									<i></i>
+									<i></i>
+									<i></i>
+									<i></i>
+									<i></i>
+									<i></i>
+									<i></i>
+									<i></i>
+									<em></em>
+									<em></em>
+									<div></div>
+								</div>
+							</div>
+							<div class="hexagon-gift-2"><img src="images/th/milestone/cycle1.png" alt="Hexagon" class="img-fluid"></div>
+							<div class="hexagon-gift-1"><img src="images/th/milestone/cycle2.png" alt="Hexagon" class="img-fluid"></div>
+							<div class="hexagon-gift-2"><img src="images/th/milestone/cycle3.png" alt="Hexagon" class="img-fluid"></div>
+							<div class="hexagon-gift-1"><img src="images/th/milestone/cycle4.png" alt="Hexagon" class="img-fluid"></div>
+							<div class="hexagon-gift-2"><img src="images/th/milestone/cycle5.png" alt="Hexagon" class="img-fluid"></div>
+						</div>
+
+						<div class="col-4 col-md-4 col-lg milestone-position rewards-milestone-1 mt-3 mt-lg-0">
+							<div class="item-milestone">
+								<div class="position-relative">
+									<div class="rewards-block"><img src="images/th/milestone/rewards-complete.png" class="img-fluid" ng-if="+tools2.MileStone >= 50000" alt="ผ่านเงื่อนไข"></div>
+									<div class="light-sweep" style="position: relative;">
+										<div class="lightSweep"><img src="images/th/milestone/rewards-1.png" class="img-fluid" alt="ไม่ผ่านเงื่อนไข"></div>
+										<img src="images/th/milestone/rewards-1.png" class="img-fluid" alt="ไม่ผ่านเงื่อนไข">
+									</div>
+									<img src="images/th/milestone/rewards-detail-1.png" alt="" style="display: none; opacity: 1;">
+								</div>
+							</div>
+							<div class="hide rewards1"><img src="images/th/milestone/rewards-detail-1.png" alt="Detail Rewards" class="img-fluid  d-none d-lg-block"></div>
+						</div>
+
+						<div class="col-4 col-md-4 col-lg milestone-position rewards-milestone-2 mt-3 mt-lg-0">
+							<div class="item-milestone">
+								<div class="position-relative">
+									<div class="rewards-block"><img src="images/th/milestone/rewards-complete.png" class="img-fluid" ng-if="+tools2.MileStone >= 150000" alt="ผ่านเงื่อนไข"></div>
+									<div class="light-sweep">
+										<div class="lightSweep"><img src="images/th/milestone/rewards-2.png" class="img-fluid" alt="ไม่ผ่านเงื่อนไข"></div>
+										<img src="images/th/milestone/rewards-2.png" class="img-fluid" alt="ไม่ผ่านเงื่อนไข">
+									</div>
+								</div>
+							</div>
+							<div class="hide rewards2"><img src="images/th/milestone/rewards-detail-2.png" alt="Detail Rewards" class="img-fluid  d-none d-lg-block"></div>
+						</div>
+
+						<div class="clearfix"></div>
+						<div class="col-12 hexagon-gift mx-auto d-block d-lg-none mt-3 mb-3" style="position:relative;">
+							<img src="images/th/milestone/hexagon.gif" alt="Hexagon" class="img-fluid">
+							<div class="hexagon-gift-2"><img src="images/th/milestone/cycle1.png" alt="Hexagon" class="img-fluid"></div>
+							<div class="hexagon-gift-1"><img src="images/th/milestone/cycle2.png" alt="Hexagon" class="img-fluid"></div>
+							<div class="hexagon-gift-2"><img src="images/th/milestone/cycle3.png" alt="Hexagon" class="img-fluid"></div>
+							<div class="hexagon-gift-1"><img src="images/th/milestone/cycle4.png" alt="Hexagon" class="img-fluid"></div>
+							<div class="hexagon-gift-2"><img src="images/th/milestone/cycle5.png" alt="Hexagon" class="img-fluid"></div>
+						</div>
+
+						<div class="clearfix"></div>
+
+						<div class="col-4 col-md-4 col-lg milestone-position rewards-milestone-3">
+							<div class="item-milestone">
+								<div class="position-relative">
+									<div class="rewards-block"><img src="images/th/milestone/rewards-complete.png" class="img-fluid" ng-if="+tools2.MileStone >= 250000" alt="ผ่านเงื่อนไข"></div>
+									<div class="light-sweep">
+										<div class="lightSweep"><img src="images/th/milestone/rewards-3.png" class="img-fluid" alt="ไม่ผ่านเงื่อนไข"></div>
+										<img src="images/th/milestone/rewards-3.png" class="img-fluid" alt="ไม่ผ่านเงื่อนไข">
+									</div>
+								</div>
+							</div>
+							<div class="hide rewards3"><img src="images/th/milestone/rewards-detail-3.png" alt="Detail Rewards" class="img-fluid  d-none d-lg-block"></div>
+						</div>
+
+						<div class="col-4 col-md-4 col-lg milestone-position rewards-milestone-4">
+							<div class="item-milestone">
+								<div class="position-relative">
+									<div class="rewards-block"><img src="images/th/milestone/rewards-complete.png" class="img-fluid" ng-if="+tools2.MileStone >= 350000" alt="ผ่านเงื่อนไข"></div>
+									<div class="light-sweep">
+										<div class="lightSweep"><img src="images/th/milestone/rewards-4.png" class="img-fluid" alt="ไม่ผ่านเงื่อนไข"></div>
+										<img src="images/th/milestone/rewards-4.png" class="img-fluid" alt="ไม่ผ่านเงื่อนไข">
+									</div>
+								</div>
+							</div>
+							<div class="hide rewards4"><img src="images/th/milestone/rewards-detail-4.png" alt="Detail Rewards" class="img-fluid  d-none d-lg-block"></div>
+						</div>
+
+						<div class="col-4 col-md-4 col-lg milestone-position rewards-milestone-5">
+							<div class="item-milestone">
+								<div class="position-relative">
+									<div class="rewards-block"><img src="images/th/milestone/rewards-complete.png" class="img-fluid" ng-if="+tools2.MileStone >= 500000" alt="ผ่านเงื่อนไข"></div>
+									<div class="light-sweep">
+										<div class="lightSweep"><img src="images/th/milestone/rewards-5.png" class="img-fluid" alt="ไม่ผ่านเงื่อนไข"></div>
+										<img src="images/th/milestone/rewards-5.png" class="img-fluid" alt="ไม่ผ่านเงื่อนไข">
+									</div>
+								</div>
+							</div>
+
+							<div class="hide rewards5"><img src="images/th/milestone/rewards-detail-5.png" alt="Detail Rewards" class="img-fluid  d-none d-lg-block"></div>
+						</div>
+					</div>
+
+					<div class="rewards-space d-block d-lg-none">
+						<a data-fancybox="gallery" href="images/th/milestone/rewards-detail-sum.png">
+							<img src="images/th/milestone/rewards-space.png" alt="Pre-Register Reward & milestone" class="img-fluid w-100 h-100">
+						</a>
+					</div>
+				</div>
+				<div class="col-12 mt-4 mt-lg-5 text-center">
+					<a href="#"><img src="images/th/milestone/btn-pre-register-noah.png" alt="Pre-register" class="img-fluid hvr-shrink"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!----------------->
+	<!--Invite Friend-->
+	<!----------------->
+	<div class="invite-friend" id="invite-friend">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-12">
+					<img src="images/th/invite-friend/title-invite-friend-noah.png" alt="Invite Friend" class="img-fluid d-none d-md-block mx-auto">
+					<img src="images/th/invite-friend/title-invite-sm-friend-noah.png" alt="Invite Friend" class="img-fluid d-block d-md-none mx-auto">
+				</div>
+				<div class="col-11 mt-4 mx-auto"><img src="images/th/invite-friend/banner-invite-friend-noahy.png" alt="button Invite Friend" class="img-fluid"></div>
+				<div class="col-12 mt-3 mt-lg-5 mt-xl-4 text-center">
+					<a href="#"><img src="images/th/invite-friend/btn-invite-friend-noah.png" alt="button Invite Friend" class="img-fluid hvr-shrink"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!------------------->
+	<!--Game Characters-->
+	<!------------------->
+	<div class="game-characters" id="game-characters">
+		<div class="container-fluid">
+			<div class="row text-center">
+				<div class="col-12"><img src="images/th/game-characters/title-game-character-noah.png" alt="Game Characters" class="img-fluid d-none d-md-block mx-auto">
+					<img src="images/th/game-characters/title-game-character-sm-noah.png" alt="Game Characters" class="img-fluid d-block d-md-none mx-auto">
+				</div>
+			</div>
+			<!-- ----------------------------------------------- -->
+			<!-- --------------------- LG ---------------------- -->
+			<!-- ----------------------------------------------- -->
+			<div class="row position-relative text-center d-none d-sm-block mt-4"> <img src="images/th/game-characters/slide-chr-btn-left.png" class="slide-charactor-btn-main bynnn-001 slide-charactor-list-NextBtn" alt="arrow left"> <img src="images/th/game-characters/slide-chr-btn-right.png" class="slide-charactor-btn-main bynnn-002 slide-charactor-list-PreviousBtn" alt="arrow right">
+				<div class="col-12 theme-drop-shadow-black">
+					<div id="slide-charactor-list-lg" class="owl-carousel owl-theme" style="overflow: visible">
+						<!-- slide - 1  -->
+						<div class="item">
+							<div class="d-inline-block position-relative">
+								<img src="images/th/game-characters/slide-chr-auria.png" class="slide-charactor-position-main slide-charactor-position-1" alt="Auria">
+								<img src="images/th/game-characters/slide-chr-ave.png" class="slide-charactor-position-main slide-charactor-position-2" alt="Ave">
+								<img src="images/th/game-characters/slide-chr-kage.png" class="slide-charactor-position-main slide-charactor-position-3" alt="Kage">
+								<img src="images/th/game-characters/slide-chr-kiko.png" class="slide-charactor-position-main slide-charactor-position-4" alt="Kiko">
+								<a href="#0" class="slide-charactor-select-main slide-charactor-select-position-1" data-slide-charactor-moveup="slide-charactor-position-1"> </a>
+								<a href="#0" class="slide-charactor-select-main slide-charactor-select-position-2" data-slide-charactor-moveup="slide-charactor-position-2"> </a>
+								<a href="#0" class="slide-charactor-select-main slide-charactor-select-position-3" data-slide-charactor-moveup="slide-charactor-position-3"> </a>
+								<a href="#0" class="slide-charactor-select-main slide-charactor-select-position-4" data-slide-charactor-moveup="slide-charactor-position-4"> </a>
+								<img src="images/th/game-characters/slide-chr-save-space.png" class="img-fluid invisible" alt="">
+							</div>
+						</div>
+						<!-- slide - 2  -->
+						<div class="item">
+							<div class="d-inline-block position-relative">
+								<img src="images/th/game-characters/slide-chr-noah.png" class="slide-charactor-position-main slide-charactor-position-1" alt="Noah">
+								<img src="images/th/game-characters/slide-chr-vivian.png" class="slide-charactor-position-main slide-charactor-position-2" alt="Vivian">
+								<img src="images/th/game-characters/slide-chr-kami.png" class="slide-charactor-position-main slide-charactor-position-3" alt="Kami">
+								<img src="images/th/game-characters/slide-chr-sanada.png" class="slide-charactor-position-main slide-charactor-position-4" alt="Sanada">
+								<a href="#0" class="slide-charactor-select-main slide-charactor-select-position-1" data-slide-charactor-moveup="slide-charactor-position-1"> </a>
+								<a href="#0" class="slide-charactor-select-main slide-charactor-select-position-2" data-slide-charactor-moveup="slide-charactor-position-2"> </a>
+								<a href="#0" class="slide-charactor-select-main slide-charactor-select-position-3" data-slide-charactor-moveup="slide-charactor-position-3"> </a>
+								<a href="#0" class="slide-charactor-select-main slide-charactor-select-position-4" data-slide-charactor-moveup="slide-charactor-position-4"> </a>
+								<img src="images/th/game-characters/slide-chr-save-space.png" class="img-fluid invisible" alt="Space">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- ----------------------------------------------- -->
+			<!-- --------------------- SM ---------------------- -->
+			<!-- ----------------------------------------------- -->
+			<div class="row position-relative text-center mt-4 d-block d-sm-none">
+				<div class="col-12 theme-drop-shadow-black">
+					<div id="slide-charactor-list-sm" class="owl-carousel owl-theme mt-3" style="overflow: visible">
+						<div class="item"> <a href="#0"> <img src="images/th/game-characters/slide-chr-sm-auria.png" alt="Auria"></a></div>
+						<div class="item"> <a href="#0"> <img src="images/th/game-characters/slide-chr-sm-ave.png" alt="Ave"></a></div>
+						<div class="item"> <a href="#0"> <img src="images/th/game-characters/slide-chr-sm-kage.png" alt="Kage"></a></div>
+						<div class="item"> <a href="#0"> <img src="images/th/game-characters/slide-chr-sm-kiko.png" alt="Kiko"></a></div>
+						<div class="item"> <a href="#0"> <img src="images/th/game-characters/slide-chr-sm-noah.png" alt="Noah"></a></div>
+						<div class="item"> <a href="#0"> <img src="images/th/game-characters/slide-chr-sm-vivian.png" alt="Vivian"></a></div>
+						<div class="item"> <a href="#0"> <img src="images/th/game-characters/slide-chr-sm-kami.png" alt="Kami"></a></div>
+						<div class="item"> <a href="#0"> <img src="images/th/game-characters/slide-chr-sm-sanada.png" alt="Sanada"></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!---------------->
+	<!--Game Feature-->
+	<!---------------->
+	<div class="game-feature" id="game-feature">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-12"><img src="images/th/game-feature/title-game-feature-noah.png" alt="Game Feature" class="img-fluid d-none d-md-block mx-auto">
+					<img src="images/th/game-feature/title-game-feature-sm-noah.png" alt="Game Feature" class="img-fluid d-block d-md-none mx-auto">
+				</div>
+				<div class="col-12 mt-4 mx-auto"><img src="images/th/game-feature/feature1.jpg" alt="Game Feature" class="img-fluid"></div>
+			</div>
+		</div>
+	</div>
+
+	<!------------------->
+	<!--Floating Social-->
+	<!------------------->
+	<div class="floating-noah d-none d-xl-block">
+		<div><img src="images/social/social-character.png" alt="social character" class="img-fluid"></div>
+		<div id="panel">
+			<ul class="social-list">
+				<a href="#facebook" target="_blank">
+					<li>
+						<span class="facebook-list"></span>
+					</li>
+				</a>
+				<a href="#youtube" target="_blank">
+					<li>
+						<span class="youtube-list"></span>
+					</li>
+				</a>
+				<a href="#discord" target="_blank">
+					<li>
+						<span class="discord-list"></span>
+					</li>
+				</a>
+				<a href="#tiktok" target="_blank">
+					<li>
+						<span class="tiktok-list"></span>
+					</li>
+				</a>
+			</ul>
+		</div>
+		<div class="social-buttons"></div>
+		<div id="flip"><img src="images/social/social-slide.png" alt="social slide" class="img-fluid"></div>
+	</div>
+	<!---------->
+	<!-- More -->
+	<!---------->
+	<div class="box-more" data-bs-toggle="modal" data-bs-target="#more-detail-Modal">
+		<div>MORE&nbsp;&nbsp;<i class="fa-solid fa-circle-plus"></i></div>
+	</div>
+	<div class="modal fade" id="more-detail-Modal" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-body noah-detail-body background-modal-noah">
+					<div class="row">
+						<button type="button" class="btn-close-noah" data-bs-dismiss="modal" aria-label="Close"></button>
+						<h5 class="modal-title title-noah-modal">กิจกรรมลงทะเบียนล่วงหน้า Noah’s Heart</h5>
+						<div class="col-12 text-center"><img src="images/line-divider.png" class="img-fluid" alt="Line Divider"></div>
+						<div class="col-12 detail-title-noah-modal">ระยะเวลากิจกรรม </div>
+						<div class="col-12 detail-noah-modal">
+							<p>เริ่มต้น : 1 สิงหาคม 2565 </p>
+							<p>สิ้นสุด : 21 กันยายน 2565 </p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 detail-title-noah-modal">รายละเอียดกิจกรรม</div>
+						<div class="col-12 detail-noah-modal mt-2">
+							<ul style="margin-left: 20px;" class="list-detail">
+								<li>ลงทะเบียนล่วงหน้าผ่านการใช้เบอร์โทรศัพท์ และอีเมลล์เท่านั้น</li>
+								<li>การลงทะเบียนล่วงหน้าจะสามารถรับรางวัลได้ลำดับละ 1 ครั้งเท่านั้นเมื่อผ่านเงื่อนไข</li>
+								<li>รางวัลสำหรับการลงทะเบียนล่วงหน้า จะได้รับเฉพาะผู้ที่ลงทะเบียนล่วงหน้าเท่านั้น</li>
+								<li>หากจำนวนลงทะเบียนล่วงหน้าครบตามเป้าหมายในแต่ละขั้นจะได้รับไอเท็มเพิ่มเติม</li>
+								<li>ทีมงานขอสงวนสิทธิ์ในการเปลี่ยนแปลงโดยไม่จำเป็นต้องแจ้งให้ทราบล่วงหน้า</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!---------->
+	<!--Footer-->
+	<!---------->
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12" id="wm_pp_footer_ci_center" data-wm-pp-footer-ci-center-id="au"> </div>
+			</div>
+		</div>
+	</div>
+
+	<!--jQuery-->
+	<script src="js/jquery-2.0.2.js"></script>
+	<script src="js/playpark.custom.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<script type="text/javascript" src="https://media-web.playpark.com/topbar/unsupported-browser-bar.js"></script>
+	<!--AOS-->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+
+	</script>
+	<!-- Font Awesome -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/solid.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" rel="stylesheet">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<!-- Progress -->
+	<script src="js/progess.js"></script>
+	<!-- Fancybox -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+	<script>
+		Fancybox.bind('[data-fancybox="gallery"]', {
+			Image: {
+				zoom: false,
+			},
+		});
+
+	</script>
+	<!--Floating-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#flip").click(function() {
+				$("#panel").slideToggle("slow");
+			});
+		});
+
+	</script>
+
+	<!-- Head Website -->
+	<script src="js/scripts.nav.js"></script>
+	<link rel="stylesheet" href="css/head-website.css">
+	<script src="https://www.youtube.com/iframe_api"></script>
+	<!-- ของรางวัลหมุน -->
+	<link href="css/rotate.css" rel="stylesheet">
+	<!-- Game Character -->
+	<link href="css/owl.carousel.min.css" rel="stylesheet">
+	<link href="css/owl.theme.default.min.css" rel="stylesheet">
+	<script src="js/owl.carousel.min.js"></script>
+	<script>
+		$('.slide-charactor-select-main').hover(function() {
+			var a = $(this).attr("data-slide-charactor-moveup");
+			$('.' + a).toggleClass('slide-charactor-moveup');
+		})
+
+	</script>
+	<script>
+		$(document).ready(function() {
+			owl_banner = $("#slide-charactor-list-lg");
+			owl_banner.owlCarousel({
+				margin: 20,
+				items: 1,
+				center: true,
+				responsiveClass: true,
+				responsive: {
+					0: {
+						items: 1,
+					},
+					576: {
+						items: 1,
+					},
+					768: {
+						items: 1,
+					},
+					992: {
+						items: 1,
+					},
+					1200: {
+						items: 1,
+					},
+					1400: {
+						items: 1,
+					}
+				}
+			});
+			$('.slide-charactor-list-PreviousBtn').click(function() {
+				owl_banner.trigger('next.owl.carousel');
+			})
+			$('.slide-charactor-list-NextBtn').click(function() {
+				owl_banner.trigger('prev.owl.carousel');
+			})
+		});
+		$(document).ready(function() {
+			owl_banner2 = $("#slide-charactor-list-sm");
+			owl_banner2.owlCarousel({
+				margin: 20,
+				items: 1,
+				center: true,
+				responsiveClass: true,
+				responsive: {
+					0: {
+						items: 1,
+					},
+					576: {
+						items: 1,
+					},
+					768: {
+						items: 1,
+					},
+					992: {
+						items: 1,
+					},
+					1200: {
+						items: 1,
+					},
+					1400: {
+						items: 1,
+					}
+				}
+			});
+		});
+
+	</script>
+	<!--planet-->
+	<script>
+		$('.planet-select-main1,.planet-select-main2,.planet-select-main3,.planet-select-main4,.planet-select-main5').hover(function() {
+			var a = $(this).attr("data-planet-hover");
+			$('.' + a).toggleClass('planet-hover');
+		})
+
+	</script>
+	<!-- From -->
+	<link rel="stylesheet" href="css/intlTelInput.css" />
+	<script type="text/javascript" src="js/intlTelInput.js"></script>
+	<script>
+		const phoneInputField = document.querySelector("#phone");
+		const phoneInput = window.intlTelInput(phoneInputField, {
+			preferredCountries: ["th", "sg", "my", "id", "ph", "vn"],
+			utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+		});
+
+
+		$('.iti--allow-dropdown').addClass('FreeText2');
+
+	</script>
+	<script src="js/sweetalert2@11.js"></script>
+	<script src="js/YyOafad8.js"></script>
+	<!-- ------------------------------------------ -->
+	<!-- -------------UTM Tracking 2022------------ -->
+	<!-- ------------------------------------------ -->
+	<!-- button teacking -->
+	<!-- class="ppth_utm_button_tracking" data-button_name="[game_name] / [project_name] / [button_name]" data-stage="1" -->
+
+	<!-- section tracking -->
+	<!-- class="continuous-true" id="[section_name]" -->
+
+	<script src="https://media-web.playpark.com/all-js/utm/noframework.waypoints.min.js"></script>
+	<script src="https://media-web.playpark.com/all-js/utm/hashes.js"></script>
+	<script src="https://media-web.playpark.com/all-js/utm/utm2022.js"></script>
+
+	<!-- ------------------------------------------ -->
+	<!-- ------------//UTM Tracking 2022----------- -->
+	<!-- ------------------------------------------ -->
+	<script src="https://media-web.playpark.com/ci-game/footer_wp_ci_game.js "></script>
+</body>
+
+</html>

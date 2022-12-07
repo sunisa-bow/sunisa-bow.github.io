@@ -1,0 +1,96 @@
+/*****************/
+/*Game Characters*/
+/*****************/
+.game-characters {
+    padding: 70px 0;
+    background: url(../images/th/game-characters/bg-game-character-noah.jpg) no-repeat top center;
+    background-size: cover;
+}
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: 0;
+    display: none;
+}
+
+.slide-charactor-position-main {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100% !important;
+    /*filter: grayscale(1);*/
+    transform: scale(0.95);
+    transition: all .2s ease
+}
+
+.slide-charactor-select-position-1 {
+    left: 17.1%;
+    top: 14%
+}
+
+.slide-charactor-select-position-2 {
+    left: 34%;
+    top: 14%
+}
+
+.slide-charactor-select-position-3 {
+    left: 51.1%;
+    top: 14%
+}
+
+.slide-charactor-select-position-4 {
+    left: 67.9%;
+    top: 14%
+}
+
+.slide-charactor-moveup {
+    /*transform: translateY(-15px);*/
+    transform: scale(1);
+    filter: grayscale(0);
+    z-index: 3;
+    transition: all .2s ease
+}
+
+.bynnn-001 {
+    left: 1%;
+    top: 40%
+}
+
+.slide-charactor-btn-main {
+    position: absolute;
+    width: 7%;
+    z-index: 2;
+    cursor: pointer
+}
+
+.bynnn-002 {
+    left: 90%;
+    top: 40%
+}
+
+.slide-charactor-select-main {
+    position: absolute;
+    width: 14.5%;
+    height: 72%;
+    /*background-color: #ff000066;*/
+    z-index: 4
+}
+
+@media (max-width: 1200px) {}
+
+@media (min-width: 992px)and (max-width:1199px) {}
+
+@media (min-width: 768px)and (max-width:991px) {}
+
+@media (min-width: 576px)and (max-width:767px) {}
+
+@media (max-width: 575px) {
+    .owl-theme .owl-nav.disabled + .owl-dots {
+        margin-top: 0;
+        display: block;
+    }
+
+    .game-characters {
+        padding: 50px 0 25px 0;
+    }
+
+    @media (max-width:320px) {}
